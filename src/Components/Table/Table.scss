@@ -1,0 +1,27 @@
+.table {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 7px;
+  &__field {
+    cursor: pointer;
+    &:hover {
+      background-color: #c3c3c3;
+    }
+  }
+}
+
+.arrow {
+  th {
+    cursor: pointer;
+    vertical-align: bottom;
+    border: none;
+    &:after {
+      content: '\25BC';
+    }
+  }
+  .sorted-by {
+    &:after {
+      content: '\25B2';
+    }
+  }
+}
