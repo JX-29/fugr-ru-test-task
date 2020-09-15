@@ -117,10 +117,6 @@ class App extends Component {
         if (!searchInfo) {
             return this.state.data
         } else {
-            this.setState({
-                //после нажатия пользователь возвращается на первую страницу чтобы увидеть результат
-                currentPage: 0
-            })
             return this.state.data.filter(user =>
             {
                 return user['firstName'].toLocaleLowerCase().includes(searchInfo.toLocaleLowerCase()) ||
